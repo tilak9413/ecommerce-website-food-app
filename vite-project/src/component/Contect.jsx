@@ -3,7 +3,7 @@ import React from 'react';
 const Contect = () => {
   return (
     <div>
-      <header className="bg-gray-800 text-white  contect-bg   pt-20 p-4">
+      <header className="bg-red-900 text-white  contect-bg   pt-20 p-4">
         <div className="container mx-auto  ">
           <h1 className="text-3xl">Contact Us</h1>
         </div>
@@ -36,7 +36,7 @@ const Contect = () => {
             <input type="tel" placeholder="Phone" className="p-3 border border-gray-300 rounded" />
             <input type="text" placeholder="Subject" className="p-3 border border-gray-300 rounded" />
             <textarea placeholder="Write a message" className="p-3 border border-gray-300 rounded h-32"></textarea>
-            <button type="submit" className="bg-red-500 text-white p-3 rounded">Send a Message</button>
+            <button type="submit" className="bg-red-900 text-white p-3 rounded">Send a Message</button>
           </div>
         </form>
       </div>

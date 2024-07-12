@@ -1,81 +1,71 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+
 const Profile = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
+
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-200  pt-20">
-            <div className="bg-white rounded-lg shadow-lg p-3 w-full  max-w-md">
-                <div className="flex flex-col items-center">
-                    <img 
-                        src="public\profileimage.png" 
-                        alt="Profile" 
-                        className="rounded-full w-24 h-24 mb-4"
-                    />
-                    <button className="bg-blue-500 text-white rounded-full px-4 py-2 mb-4">
-                        Connect to LinkedIn
-                    </button>
-                </div>
-                <form className="space-y-4">
-                    <div className="flex space-x-4">
-                        <div className="w-1/2">
-                            <label className="block text-sm font-medium text-gray-700">First Name</label>
-                            <input 
-                                type="text" 
-                                value="Andrew" 
-                                readOnly 
-                                className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                            />
-                        </div>
-                        <div className="w-1/2">
-                            <label className="block text-sm font-medium text-gray-700">Last Name</label>
-                            <input 
-                                type="text" 
-                                value="Turing" 
-                                readOnly 
-                                className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Time Zone</label>
+        <div className="min-h-screen flex items-center justify-center pt-16 ">
+            <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+                <h2 className="text-2xl font-bold mb-6">Account Settings</h2>
+                <form>
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                            Your Name
+                        </label>
                         <input 
                             type="text" 
-                            value="+5 GMT" 
-                            readOnly 
-                            className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                            id="name" 
+                            defaultValue="Anthony Webb" 
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
                         />
                     </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Phone</label>
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+                            Password
+                        </label>
                         <input 
-                            type="text" 
-                            value="555-237-2384" 
-                            readOnly 
-                            className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                            type="password" 
+                            id="password" 
+                            defaultValue="********" 
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
                         />
+                        <a href="#" className="text-blue-500 text-sm">Change</a>
                     </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Email Address</label>
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                            Email Address
+                        </label>
                         <input 
-                            type="text" 
-                            value="andrew.turing@cryptographyinc.com" 
-                            readOnly 
-                            className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                            type="email" 
+                            id="email" 
+                            defaultValue="myemail@address.com" 
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
                         />
+                        <a href="#" className="text-blue-500 text-sm">Change</a>
                     </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Authentication</label>
-                        <div className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2 bg-gray-100">
-                            <p className="text-sm text-gray-900">SAML ID</p>
-                            <p className="text-sm text-gray-700">andrew.turing@cryptographyinc.com</p>
-                            <a href="https://cryptographyinc.com/login/secure/KQ28neiw99" className="text-blue-600">
-                                https://cryptographyinc.com/login/secure/KQ28neiw99
-                            </a>
-                        </div>
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2">
+                            Upload a picture
+                        </label>
+                        <button className="bg-blue-500 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                            Upload a picture
+                        </button>
                     </div>
-                
+                    <div className="flex items-center justify-between">
+                        <button className="bg-gray-500 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                            Cancel
+                        </button>
+                        <button className="bg-blue-500 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                            Save
+                        </button>
+                    </div>
+                    <div className="mt-4 text-center">
+                        <a href="#" className="text-red-500 text-sm">Delete Your Account</a>
+                        <p className="text-gray-500 text-xs">You will receive an email to confirm your decision.</p>
+                        <p className="text-gray-500 text-xs">Once you delete your account, there is no going back. Please be certain.</p>
+                    </div>
                 </form>
             </div>
         </div>

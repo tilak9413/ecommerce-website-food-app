@@ -1,5 +1,6 @@
 
 
+
 .carousel-container {
   position: relative;
   max-width: 100%;
@@ -71,4 +72,114 @@
 background-image: url(../public/1.png);
 position: relative;
 background-repeat: no-repeat;
+}
+.bgcolor{
+  background-color: #e9ecef;
+}
+.bgimagemain
+{
+  background-image: url(https://i.pinimg.com/564x/a6/40/4f/a6404f49a0f37b0ab3e022f0ce3022f2.jpg);
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.bg-image
+{
+  background-image: url("../public/Background.png");
+}
+.bg-imagehero
+{
+  background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+  width: 100% !important; 
+  background-size: cover;
+}
+
+/* ******************************************************** */
+
+
+.collections {
+  padding: 100px;
+  text-align: center;
+}
+
+.collections h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.collections p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.collection-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.collection-card:hover {
+  transform: scale(1.05);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.collection-info {
+  padding: 15px;
+
+}
+
+.collection-info h3 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.collection-info p {
+  font-size: 1em;
+  color: #555;
+}
+
+
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.float1 {
+  animation: float 10s ease-in-out infinite;
+}
+
+.float2 {
+  animation: float 7s ease-in-out infinite;
+}
+
+.float3 {
+  animation: float 8s ease-in-out infinite;
+}
+
+.float4 {
+  animation: float 5s ease-in-out infinite;
+}
+
+.float5 {
+  animation: float 9s ease-in-out infinite;
 }
